@@ -5,13 +5,15 @@ Created on 26 de jul de 2016
 '''
 idade = int(input("Digite sua idade: "))
 
-if 18 <= idade <= 65:
-    
+if 18 <= idade < 65:  
     print("Você é obrigado a votar")
     
 if 16 <= idade <= 17:
-        print("Você vota só se você quiser")
+    print("Você vota só se você quiser")
 
-else:
-    if idade > 65: 
-        print("Você vota só se você quiser")
+if idade >= 65: 
+    print("Você vota só se você quiser")
+    
+if idade < 16: 
+    print("Você não pode votar")
+    
