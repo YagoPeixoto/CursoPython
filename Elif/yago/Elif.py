@@ -25,3 +25,5 @@ elif num3 > num2 > num1:
 elif num3 > num1 > num2:
     print("O maior numero é", num3, "e o menor é", num2)
     
+else:
+    print("Você digitou numeros repitidos.")
