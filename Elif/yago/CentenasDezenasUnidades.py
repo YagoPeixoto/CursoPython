@@ -20,27 +20,54 @@ if 0 <= num <= 1000:
     
     birl = num
     
-    centena = birl // 100
+    centenas = birl // 100
     birl = birl % 100
     
-    dezena = birl // 10
+    dezenas = birl // 10
     birl = birl % 10
     
-    unidade = birl // 1
+    unidades = birl // 1
     
     if num >= 100:
-        if dezena > 10:
-            if unidade > 1:
-                print("O numero tem", centena, "centena(s),", dezena, "dezena(s) e", unidade, "unidade(s)")
+        if centenas > 1:
+            if dezenas > 1:
+                if unidades > 1:
+                    print("O numero tem",centenas, "centenas,", dezenas, "dezenas e", unidades, "unidades")
+                else:
+                    print("O numero tem",centenas, "centenas,", dezenas, "dezenas e", unidades, "unidade")
             else:
-                print("O numero tem", centena, "centena(s),", dezena, "dezena(s) e", unidade, "unidade(s)")
-
-    elif num >= 100:
-        if dezena < 10:
-            if unidade >= 1:
-                print("O numero tem", centena, "centena(s) e", unidade, "unidade(s)")
-
-        
+                if unidades > 1:
+                    print("O numero tem",centenas, "centenas,", dezenas, "dezena e", unidades, "unidades")
+                else:
+                    print("O numero tem",centenas, "centenas,", dezenas, "dezena e", unidades, "unidade")
+        else:
+            if dezenas > 1:
+                if unidades > 1:
+                    print("O numero tem",centenas, "centena,", dezenas, "dezenas e", unidades, "unidades")
+                else:
+                    print("O numero tem",centenas, "centena,", dezenas, "dezenas e", unidades, "unidade")
+            else:
+                if unidades > 1:
+                    print("O numero tem",centenas, "centena,", dezenas,"dezena e", unidades, "unidades")
+                else:
+                    print("O numero tem",centenas, "centena,", dezenas,"dezena e", unidades, "unidade")
+             
+    elif 10 <= num < 100:
+        if dezenas > 1:
+            if unidades > 1:
+                print("O numero tem",dezenas, "dezenas e", unidades, "unidades")
+            else:
+                print("O numero tem",dezenas, "dezenas e", unidades, "unidade")
+        else:
+            if unidades > 1:
+                print("O numero tem",dezenas, "dezena e", unidades, "unidades")
+            else:
+                print("O numero tem",dezenas, "dezena e", unidades, "unidade")
+    else:
+        if unidades > 1:
+            print("O numero tem",unidades, "unidades")
+        else:
+            print("O numero tem",unidades, "unidade")
 else:
     print("Digite um munero entre 0 e 1000") 
     
