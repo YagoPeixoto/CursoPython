@@ -5,11 +5,10 @@ Created on 5 de ago de 2016
 '''
 a = 1
 b = 4
-c = 0
 
 while a <= b:
+    c = 0
     while c <= b:
-        print(c)
+        print(c, a)
         c = c + 1
-    print(a)
     a = a + 1
