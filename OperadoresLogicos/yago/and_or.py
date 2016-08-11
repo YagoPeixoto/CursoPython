@@ -5,8 +5,10 @@ Created on 10 de ago de 2016
 '''
 from lib2to3.fixer_util import String
 
+
+
 peso =float(input("digite seu peso:"))
 altura = float(input("digite sua altura:"))
-nome = String()
+#nome = String("Escreva seu nome:")
 
-print(nome, peso, altura)
+print("Seu peso é %d e sua altura é %d" %(altura, peso))
