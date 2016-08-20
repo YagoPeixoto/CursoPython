@@ -4,7 +4,7 @@ Created on 19 de ago de 2016
 @author: yago
 '''
 #int1 = int(input("Digite um numero inteiro: "))
-decimal =float(input("digite um numero decimal: "))
+decimal = float(input("digite um numero decimal: "))
 
 if decimal != int(decimal):
 
@@ -18,3 +18,5 @@ if decimal != int(decimal):
         print(arredondar)
         
         #print(round(decimal))
+else:
+    print(decimal)
