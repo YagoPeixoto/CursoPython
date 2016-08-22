@@ -13,10 +13,10 @@ if decimal != int(decimal):
     
     if auxDecimal >= 0.5 :
         print(arredondar + 1)
+        print(round(decimal)) #a função round arredonda os numeros de forma mas simples, sem precisar fazer if para fazer isso.
         
     else:
         print(arredondar)
-        
-        #print(round(decimal))
+        print(round(decimal))
 else:
     print(decimal)
