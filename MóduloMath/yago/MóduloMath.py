@@ -27,3 +27,5 @@ print(m.sqrt(4))
  
 from math import sin as s#muda o nome da função 
 print(s(1))
+
+# o modulo math contem muitas outras utilidades e funções matematicas
