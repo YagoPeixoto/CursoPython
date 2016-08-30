@@ -3,6 +3,9 @@ Created on 26 de ago de 2016
 
 @author: yago
 '''
+a = [1,1,2,3,4,5,6]
+print(len(a))# o len conta quantos elementos eu tenho em uma determinada lista
+
 
 lista = []
 
