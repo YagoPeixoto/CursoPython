@@ -7,12 +7,11 @@ import socket
 
 tamanhoBuffer = 1024
 msgServer= "Hello, comunicação extabelecida..."
-#quantidade = int(input("Digite a quatidade de ingressos que deseja comprar :"))
 host = 'localhost' 
 porta = 8008
 
 
-def create_server():
+def create_server():#função para criar o server
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # Cria o descritor do socket
     
@@ -30,15 +29,12 @@ def create_server():
                 print(address[0]+" say: " + data.decode('UTF-8'))
                 print("Response: " + msgServer)
                 con.send(msgServer.encode('utf-8')) # Envia mensagem através do socket.
-                
-                #print("Response: " + quantidade)
-                #con.send(quantidade.encode('utf-8'))
 
             else:
                 print("Dados não recebidos: "+address[0])
         except ValueError:
-            print("Error: Accept")
+            print("Erro")
 
 
 if __name__== "__main__":
-    create_server()
+    create_server()# chama a função criada
